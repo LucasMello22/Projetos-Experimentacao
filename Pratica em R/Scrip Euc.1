@@ -1,0 +1,13 @@
+df = read.table("EucalYpto.txt", header = T, sep="")
+print(df)
+summary(df)
+mean(df$DAP)
+median(df$DAP)
+library(modeest)  #Pac. instalado no R, estou com problemas de permissão do diretorio #
+mfv(df$DAP) 
+max(df$DAP)-min(df$DAP)
+range(df$DAP)
+var(df$DAP)
+sd(df$DAP)
+sd(df$DAP)/mean(df$DAP) * 100
+

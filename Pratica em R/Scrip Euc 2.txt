@@ -1,0 +1,5 @@
+df2 <- read.table("Eucalypto 2.txt", header = T, sep="")
+print(df2)
+t.test(df2$DAP_3x3, df2$DAP_3x4, conf.level = 0.95, paired = TRUE)
+summary(df2)  #coloquei os valores com virgula, testes o sumarry para saber onde havia  errado #
+t.test(df2$DAP_3x3, df2$DAP_3x4, conf.level = 0.95, paired = TRUE)
